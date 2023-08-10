@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="min-h-screen flex bg-[url(images/bg-pattern-desktop.svg)] bg-no-repeat bg-cover font-JosefinSans">
+    <div class="py-16 px-64 grid">
+      <img src="images/logo.svg" alt="">
+      <div class="flex flex-col gap-8 pr-32 text-center md:text-left">
+        <img src="images/hero-mobile.jpg" alt="" class=" inline-block   md:hidden">
+        <span class="text-7xl uppercase font-light text-DesaturatedRed tracking-[1rem]">
+          We're
+          <span class="text-7xl uppercase tracking-[1rem] text-DarkGrayishRed font-semibold"> 
+            coming soon
+          </span>
+        </span>
+        
+        <span class="tracking-widest text-DesaturatedRed ">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </span>
+        <form class="flex flex-col focus-within:outline-none relative">
+          <input type="email" placeholder="Email Address" id="test-email" class="email-input bg-transparent bg-[url(images/icon-error.svg)] bg-no-repeat bg-[18rem_,4px] bg-none border-DarkGrayishRed rounded-full border border-opacity-30 p-4 w-full focus:rounded-full ">
+          <button   onclick="validateEmail()" class="absolute p-5 self-center right-0 bg-gradient-to-r from-[hsl(0,_80%,_86%)] to-[hsl(0,74%,74%)]  rounded-full w-28 flex justify-center shadow-2xl z-[2]"><img src="images/icon-arrow.svg" alt=""></button>
+          <span class="error m-4 text-SoftRed hidden">Please provide a valid email!</span>
+        </form>
+        
+          
+      </div>
+    </div>
+    <img src="images/hero-desktop.jpg" alt="" class="h-screen hidden md:inline">
+  </main>
+  
+  <script src="index.js"></script>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kohi</a>.
+    </p>
+  </footer>
+</body>
+</html>
